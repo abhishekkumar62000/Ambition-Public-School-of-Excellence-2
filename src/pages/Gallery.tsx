@@ -4,25 +4,26 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 
 // Support mixed file extensions for the last two entries
+// Serve images from the `public/gallery` directory so Vercel can host them statically
 const images = [
-  "/photos/1.jpeg",
-  "/photos/2.jpeg",
-  "/photos/3.jpeg",
-  "/photos/4.jpeg",
-  "/photos/5.jpeg",
-  "/photos/6.jpeg",
-  "/photos/7.jpeg",
-  "/photos/8.jpeg",
-  "/photos/9.jpeg",
-  "/photos/10.jpeg",
-  "/photos/11.jpeg",
-  "/photos/12.jpeg",
-  "/photos/13.jpeg",
-  "/photos/14.jpeg",
-  "/photos/15.jpeg",
-  "/photos/16.png",
-  "/photos/17.jpg",
-  "/photos/18.jpeg",
+  "/gallery/1.jpeg",
+  "/gallery/2.jpeg",
+  "/gallery/3.jpeg",
+  "/gallery/4.jpeg",
+  "/gallery/5.jpeg",
+  "/gallery/6.jpeg",
+  "/gallery/7.jpeg",
+  "/gallery/8.jpeg",
+  "/gallery/9.jpeg",
+  "/gallery/10.jpeg",
+  "/gallery/11.jpeg",
+  "/gallery/12.jpeg",
+  "/gallery/13.jpeg",
+  "/gallery/14.jpeg",
+  "/gallery/15.jpeg",
+  "/gallery/16.png",
+  "/gallery/17.jpg",
+  "/gallery/18.jpeg",
 ];
 
 const GalleryPage = () => {
